@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Página Inicial";
+}
+
+<main>
+    <section class="row" aria-labelledby="appTitle">
+        <h1 id="title">CineHub</h1>
+        <p class="lead">Bem-vindo ao CineHub! Aqui você pode visualizar filmes incríveis.</p>
+        <p><a href="@Url.Action("Index", "Filme")" class="btn btn-primary btn-md">Comece agora &raquo;</a></p>
+    </section>
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="getStartedTitle">
+            <h2 id="getStartedTitle">Como Cadastrar um Filme</h2>
+            <p>É fácil cadastrar um novo filme no sistema. Basta preencher as informações básicas e adicionar a imagem e o trailer do filme.</p>
+            <p><a class="btn btn-outline-dark" href="@Url.Action("Create", "Filme")">Aprenda mais &raquo;</a></p>
+        </section>
+        <section class="col-md-4" aria-labelledby="viewMoviesTitle">
+            <h2 id="viewMoviesTitle">Ver Filmes Cadastrados</h2>
+            <p>Veja todos os filmes que foram cadastrados no sistema. Você pode editar ou excluir filmes a qualquer momento.</p>
+            <p><a class="btn btn-outline-dark" href="@Url.Action("Index", "Filme")">Ver Filmes &raquo;</a></p>
+        </section>
+        <section class="col-md-4" aria-labelledby="editDeleteMoviesTitle">
+            <h2 id="editDeleteMoviesTitle">Editar e Excluir Filmes</h2>
+            <p>Edite as informações dos filmes ou exclua-os do sistema quando necessário.</p>
+        </section>
+    </div>
+</main>

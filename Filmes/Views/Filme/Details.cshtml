@@ -1,0 +1,49 @@
+﻿@model Filmes.Models.Filme
+
+@{
+    ViewBag.Title = "Detalhes";
+}
+
+<h2>Detalhes do filme - @Html.DisplayFor(model => model.Titulo) </h2>
+
+<div>
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card d-flex flex-row">
+                    <img src="@Html.DisplayFor(model => model.UrlImagem)" class="card-img-left me-3 img-fluid" alt="@Html.DisplayFor(model => model.Titulo)">
+                    <div class="card-body">
+                        <h4 class="card-title">@Html.DisplayFor(model => model.Titulo)</h4>
+                        <p class="card-text">@Html.DisplayFor(model => model.Sinopse)</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <p><span class="fw-bold">@Html.DisplayNameFor(model => model.Avaliacao)</span>: @Html.DisplayFor(model => model.Avaliacao)</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><span class="fw-bold">@Html.DisplayNameFor(model => model.Categoria)</span>: @Html.DisplayFor(model => model.Categoria)</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><span class="fw-bold">@Html.DisplayNameFor(model => model.Duracao)</span>: @Html.DisplayFor(model => model.Duracao)</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><span class="fw-bold">@Html.DisplayNameFor(model => model.Direcao)</span>: @Html.DisplayFor(model => model.Direcao)</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 d-flex">
+                <div class="ratio ratio-16x9 flex-grow-1">
+                    <iframe src="@Html.DisplayFor(model => model.UrlVideo)" title="YouTube video" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <p>
+        @Html.ActionLink("Editar", "Edit", new { id = Model.ID }, new { @class = "btn bg-info text-white" }) |
+        @Html.ActionLink("Voltar", "Index")
+    </p>
+</div>

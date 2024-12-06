@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Filmes.Models.Filme>
+
+@{
+    ViewBag.Title = "Filmes";
+}
+
+<h2>Lista de Filmes</h2>
+
+<p>
+    @Html.ActionLink("Adicionar Filme", "Create", null, new { @class = "btn bg-info text-white" })
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Avaliacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Duracao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Titulo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Avaliacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Categoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Duracao)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.ID }, new { @class = "text-secondary" }) |
+            @Html.ActionLink("Deletar", "Delete", new { id=item.ID }, new { @class = "text-danger" })
+        </td>
+    </tr>
+}
+
+</table>
