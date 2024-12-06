@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.Serialization.Formatters;
 using System.Web;
+using Microsoft.SqlServer.Server;
 
 namespace Filmes.Models
 {
@@ -12,6 +14,7 @@ namespace Filmes.Models
         Aventura,
         Comédia,
         Drama,
+        [Display(Name = "Ficção Científica")]
         FicçãoCientífica,
         Fantasia,
         Terror,
@@ -42,7 +45,7 @@ namespace Filmes.Models
         public string UrlVideo { get; set; }
         [Display(Name = "Avaliação IMDb")]
         [Required]
-        public string Avaliacao { get; set; }
+        public decimal Avaliacao { get; set; }
         [Required]
         public Categoria Categoria { get; set; }
         [Display(Name = "Direção")]

@@ -169,9 +169,24 @@
     <Compile Include="Migrations\202412061756103_DropUsuario.Designer.cs">
       <DependentUpon>202412061756103_DropUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202412061841247_DropUsuarioModel.cs" />
+    <Compile Include="Migrations\202412061841247_DropUsuarioModel.Designer.cs">
+      <DependentUpon>202412061841247_DropUsuarioModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412061845288_AlterFilmeInAvaliacaoToFloat.cs" />
+    <Compile Include="Migrations\202412061845288_AlterFilmeInAvaliacaoToFloat.Designer.cs">
+      <DependentUpon>202412061845288_AlterFilmeInAvaliacaoToFloat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412061900134_AlterFilmeInAvaliacaoToDecimal.cs" />
+    <Compile Include="Migrations\202412061900134_AlterFilmeInAvaliacaoToDecimal.Designer.cs">
+      <DependentUpon>202412061900134_AlterFilmeInAvaliacaoToDecimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412061925282_AtualizacoesModelFilmeEmAvaliacao.cs" />
+    <Compile Include="Migrations\202412061925282_AtualizacoesModelFilmeEmAvaliacao.Designer.cs">
+      <DependentUpon>202412061925282_AtualizacoesModelFilmeEmAvaliacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Filme.cs" />
-    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -201,6 +216,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
+    <Content Include="Scripts\methods_pt.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
     <Content Include="Scripts\jquery-3.7.0.slim.js" />
@@ -288,6 +304,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202412061756103_DropUsuario.resx">
       <DependentUpon>202412061756103_DropUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412061841247_DropUsuarioModel.resx">
+      <DependentUpon>202412061841247_DropUsuarioModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412061845288_AlterFilmeInAvaliacaoToFloat.resx">
+      <DependentUpon>202412061845288_AlterFilmeInAvaliacaoToFloat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412061900134_AlterFilmeInAvaliacaoToDecimal.resx">
+      <DependentUpon>202412061900134_AlterFilmeInAvaliacaoToDecimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412061925282_AtualizacoesModelFilmeEmAvaliacao.resx">
+      <DependentUpon>202412061925282_AtualizacoesModelFilmeEmAvaliacao.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
