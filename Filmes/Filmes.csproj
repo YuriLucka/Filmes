@@ -149,8 +149,29 @@
     <Compile Include="Migrations\202412061657394_AlteracaoPropDescricaoInFilme.Designer.cs">
       <DependentUpon>202412061657394_AlteracaoPropDescricaoInFilme.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202412061714372_AddModelUsuario.cs" />
+    <Compile Include="Migrations\202412061714372_AddModelUsuario.Designer.cs">
+      <DependentUpon>202412061714372_AddModelUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412061719281_AplicadoRequiredInFilme.cs" />
+    <Compile Include="Migrations\202412061719281_AplicadoRequiredInFilme.Designer.cs">
+      <DependentUpon>202412061719281_AplicadoRequiredInFilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412061748138_PropTituloAjustada.cs" />
+    <Compile Include="Migrations\202412061748138_PropTituloAjustada.Designer.cs">
+      <DependentUpon>202412061748138_PropTituloAjustada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412061750190_AplicadoRequiredInCategoria.cs" />
+    <Compile Include="Migrations\202412061750190_AplicadoRequiredInCategoria.Designer.cs">
+      <DependentUpon>202412061750190_AplicadoRequiredInCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412061756103_DropUsuario.cs" />
+    <Compile Include="Migrations\202412061756103_DropUsuario.Designer.cs">
+      <DependentUpon>202412061756103_DropUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Filme.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -252,6 +273,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202412061657394_AlteracaoPropDescricaoInFilme.resx">
       <DependentUpon>202412061657394_AlteracaoPropDescricaoInFilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412061714372_AddModelUsuario.resx">
+      <DependentUpon>202412061714372_AddModelUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412061719281_AplicadoRequiredInFilme.resx">
+      <DependentUpon>202412061719281_AplicadoRequiredInFilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412061748138_PropTituloAjustada.resx">
+      <DependentUpon>202412061748138_PropTituloAjustada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412061750190_AplicadoRequiredInCategoria.resx">
+      <DependentUpon>202412061750190_AplicadoRequiredInCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412061756103_DropUsuario.resx">
+      <DependentUpon>202412061756103_DropUsuario.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

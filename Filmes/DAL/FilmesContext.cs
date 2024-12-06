@@ -11,5 +11,6 @@ namespace Filmes.DAL
     {
         public FilmesContext() : base("FilmesContext") { }
         public DbSet<Filme> Filmes { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }

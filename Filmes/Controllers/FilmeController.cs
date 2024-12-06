@@ -47,7 +47,7 @@ namespace Filmes.Controllers
         // obter mais detalhes, veja https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Titulo,Descricao,UrlImagem,UrlVideo,Avaliacao,Categoria,Direcao,Duracao")] Filme filme)
+        public ActionResult Create([Bind(Include = "ID,Titulo,Sinopse,UrlImagem,UrlVideo,Avaliacao,Categoria,Direcao,Duracao")] Filme filme)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace Filmes.Controllers
         // obter mais detalhes, veja https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Titulo,Descricao,UrlImagem,UrlVideo,Avaliacao,Categoria,Direcao,Duracao")] Filme filme)
+        public ActionResult Edit([Bind(Include = "ID,Titulo,Sinopse,UrlImagem,UrlVideo,Avaliacao,Categoria,Direcao,Duracao")] Filme filme)
         {
             if (ModelState.IsValid)
             {
